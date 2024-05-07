@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Group B Piala Asia Qatar U-23</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Data Group B Piala Asia Qatar U-23</h2>
+        <form method="post" action="process.php">
+            <div class="form-group">
+                <label for="nama_negara">Nama Negara:</label>
+                <select id="nama_negara" name="nama_negara" class="form-control">
+                    <option value="Korea Selatan U-23">Korea Selatan U-23</option>
+                    <option value="Jepang U-23">Jepang U-23</option>
+                    <option value="Tiongkok U-23">Tiongkok U-23</option>
+                    <option value="Uni Emirat Arab U-23">Uni Emirat Arab U-23</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jumlah_pertandingan">Jumlah Pertandingan:</label>
+                <input type="text" id="jumlah_pertandingan" name="jumlah_pertandingan" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="jumlah_menang">Jumlah Menang:</label>
+                <input type="text" id="jumlah_menang" name="jumlah_menang" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="jumlah_seri">Jumlah Seri:</label>
+                <input type="text" id="jumlah_seri" name="jumlah_seri" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="jumlah_kalah">Jumlah Kalah:</label>
+                <input type="text" id="jumlah_kalah" name="jumlah_kalah" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="jumlah_poin">Jumlah Poin:</label>
+                <input type="text" id="jumlah_poin" name="jumlah_poin" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="nama_operator">Nama Operator:</label>
+                <input type="text" id="nama_operator" name="nama_operator" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="nim_mahasiswa">NIM Mahasiswa:</label>
+                <input type="text" id="nim_mahasiswa" name="nim_mahasiswa" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <br>
+
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nama Operator/NIM</th>
+                    <th>Negara</th>
+                    <th>P</th>
+                    <th>M</th>
+                    <th>S</th>
+                    <th>K</th>
+                    <th>Poin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php include 'db.html'; ?>
+            </tbody>
+        <tr>
+<td>jefryanus/211011401823</td>
+<td>Korea Selatan U-23</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+</table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
